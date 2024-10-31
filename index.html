@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danushri S P G - Online Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            background-color: #0d0d0d;
+            color: #ffffff;
+            overflow-x: hidden;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        header {
+            background-color: #F3C623;
+            color: #282c34;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 5px solid #00ff7f;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #282c34;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.3s;
+        }
+        nav a:hover {
+            color: #00ff7f;
+            transform: scale(1.1);
+        }
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.7);
+            animation: fadeIn 1s;
+        }
+        h2 {
+            color: #ff1493;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            text-transform: uppercase;
+        }
+        .catchphrase {
+            font-size: 1.5rem;
+            margin: 10px 0;
+            color: #f1faee;
+            animation: bounce 2s infinite;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .skill {
+            background: #ffb3d9;
+            color: #ffffff;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 5px;
+            flex: 1 1 45%;
+            text-align: center;
+            transition: transform 0.3s, background 0.3s;
+        }
+        .skill:hover {
+            transform: translateY(-5px);
+            background: #282c34;
+            color: #ff1493;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ff1493;
+            color: #ffffff;
+            border-top: 5px solid #00ff7f;
+        }
+        #toggleMode {
+            background-color: #000000;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        #toggleMode:hover {
+            background-color: #444444;
+            transform: scale(1.05);
+        }
+
+        /* Light Mode Styles */
+        .light-mode {
+            background-color: #ffffff;
+            color: #000000;
+        }
+        .light-mode header {
+            background-color: #f0f0f0;
+            color: #282c34;
+        }
+        .light-mode footer {
+            background-color: #ff69b4;
+            color: #282c34;
+        }
+        .light-mode section {
+            background: rgba(0, 0, 0, 0.05);
+            color: #282c34;
+        }
+        .light-mode .skill {
+            background: #ff80ab;
+            color: #000000;
+        }
+        .light-mode nav a {
+            color: #282c34;
+        }
+    </style>
+</head>
+<body>
+
+<header id="header">
+    <h1>Danushri S P G</h1>
+    <p>3rd Year Computer Science Student</p>
+    <p class="catchphrase" id="catchphrase"></p>
+    <nav>
+        <a href="#contact">Contact</a>
+        <a href="#summary">Summary</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <button id="toggleMode">Dark Mode</button>
+    </nav>
+</header>
+
+<section id="contact">
+    <h2>Contact Information</h2>
+    <p>Email: danushrigunasekaran@gmail.com</p>
+    <p>Phone: +91-9361619396</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/Danushri%20Gunasekaran/" target="_blank" style="color: #00ff7f;">linkedin.com/in/DanushriGunasekaran</a></p>
+</section>
+
+<section id="summary">
+    <h2>Summary</h2>
+    <p>I'm Danushri S P G, a dedicated 3rd-year Computer Science Engineering student at VIT University Vellore. My academic and professional interests lie in web development, deep learning, and implementation-oriented problem-solving. I thrive in collaborative environments, bringing a strong team spirit and the ability to adapt quickly to new challenges. I approach my work with a calm demeanor, managing stress effectively to maintain focus and creativity, ensuring I deliver results consistently.</p>
+</section>
+
+<section id="experience">
+    <h2>Experience</h2>
+    <ul class="timeline">
+        <li class="timeline-item">
+            <strong>Web Developer</strong> at <strong>"NeighBorrow"</strong> (Mar 2024 - Present)
+            <div class="timeline-content">
+                <p>Developed a community-driven rental and lending platform on Wix, fostering sustainability and community engagement.</p>
+            </div>
+        </li>
+        <li class="timeline-item">
+            <strong>Research Intern</strong> at <strong>NIT Trichy</strong> (May 2024 - Jul 2024)
+            <div class="timeline-content">
+                <p>Worked on "Topic Allocation using LDA" for social media analysis, guided by a professor with over 20 publications.</p>
+            </div>
+        </li>
+        <li class="timeline-item">
+            <strong>Junior Manager</strong> at <strong>AIESEC</strong> (Feb 2023 - Jul 2023)
+            <div class="timeline-content">
+                <p>Engaged in the WLL programme coordinated by UNICEF, focusing on raising awareness for sustainable goals and working with children aged 8-12.</p>
+            </div>
+        </li>
+    </ul>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    <ul class="timeline">
+        <li class="timeline-item">
+            <strong>Bachelor of Technology</strong> in Computer Science at Vellore Institute of Technology, Vellore (2022 - Present, CGPA: 7.94)
+        </li>
+        <li class="timeline-item">
+            <strong>Senior Secondary</strong> at Central Board of Secondary Education (2022, 81%)</li>
+        <li class="timeline-item">
+            <strong>Secondary</strong> at Central Board of Secondary Education (2020, 91%)
+        </li>
+    </ul>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+        <div class="skill">Python</div>
+        <div class="skill">Java</div>
+        <div class="skill">C & C++</div>
+        <div class="skill">Web Development (HTML, CSS, JavaScript)</div>
+        <div class="skill">MySQL</div>
+        <div class="skill">Data Structures and Algorithms</div>
+        <div class="skill">AI & ML</div>
+        <div class="skill">Cloud Computing (IBM Certified)</div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Danushri S P G. All rights reserved.</p>
+</footer>
+
+<script>
+    window.onload = function() {
+        const now = new Date();
+        const hour = now.getHours();
+        let greeting;
+
+        if (hour < 12) {
+            greeting = "Good morning! Have a good day!";
+        } else if (hour < 18) {
+            greeting = "Good afternoon! Have a good day!";
+        } else if (hour < 21) {
+            greeting = "Good evening! Have a good day!";
+        } else {
+            greeting = "Good night! Have a good day!";
+        }
+
+        alert(greeting + "\n\n(Press OK to respond: 'Thanks')");
+    };
+
+    const greetingElement = document.getElementById('catchphrase');
+    const now = new Date();
+    const hour = now.getHours();
+    let greetingText;
+
+    if (hour < 12) {
+        greetingText = "Good morning! Here’s the scoop on who I am, what I do, and how I survived all those late-night coding sessions!";
+    } else if (hour < 18) {
+        greetingText = "Good afternoon! Here’s the scoop on who I am, what I do, and how I survived all those late-night coding sessions!";
+    } else {
+        greetingText = "Good evening! Here’s the scoop on who I am, what I do, and how I survived all those late-night coding sessions!";
+    }
+
+    greetingElement.innerText = greetingText;
+
+    // Dark Mode Toggle
+    const toggleButton = document.getElementById('toggleMode');
+    toggleButton.addEventListener('click', () => {
+        document.body.classList.toggle('light-mode');
+        toggleButton.innerText = document.body.classList.contains('light-mode') ? 'Dark Mode' : 'Light Mode';
+    });
+</script>
+</body>
+</html>
